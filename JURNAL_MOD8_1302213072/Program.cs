@@ -112,14 +112,14 @@ public class program
 
         if (bankTransferConfig.BT.lang == "en")
         {
-            Console.Write("Please insert the amount of money to transfer: ");
+            Console.Write("masukan Junlah uang: ");
             int amountTF = Convert.ToInt32(Console.ReadLine());
 
             if (amountTF <= bankTransferConfig.BT.transfer.threshold)
             {
-                Console.WriteLine("Tranfer Fee = " + bankTransferConfig.BT.transfer.low_fee);
+                Console.WriteLine("Jumlah Transfer = " + bankTransferConfig.BT.transfer.low_fee);
                 int FeeTotal = bankTransferConfig.BT.transfer.low_fee + amountTF;
-                Console.WriteLine("Total Amount = " + FeeTotal);
+                Console.WriteLine("Total Semua = " + FeeTotal);
 
                 Console.WriteLine("Select transfer method: ");
                 for (int i = 0; i < bankTransferConfig.BT.methods.Count; i++)
